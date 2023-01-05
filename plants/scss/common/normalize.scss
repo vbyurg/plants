@@ -379,8 +379,14 @@ li {
     list-style: none;
 }
 
-a {}
+a {
+    text-decoration: none;
+}
 
 ul {
     padding: 0;
+}
+
+p {
+    margin: 0;
 }

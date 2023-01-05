@@ -1,0 +1,34 @@
+.about {
+    background-color: $white;
+
+    &--container {
+        gap: 153px;
+    }
+
+    &--content {
+        align-self: flex-start;
+    }
+
+    &--title {
+        margin: 0;
+        padding: 156px 0 40px 0;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    &--text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $t-main;
+    }
+
+    &--houseplant {
+        padding: 93px 0 93px;
+    }
+}

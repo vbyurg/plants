@@ -1,0 +1,68 @@
+.prices {
+    background-color: $white;
+    justify-content: space-between;
+
+    &--container {
+        align-items: flex-start;
+        padding: 80px 0 115px;
+    }
+
+
+
+    &--title {
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: $black;
+    }
+
+
+
+
+    &--content {
+        width: 40%;
+    }
+
+    &--text {
+        margin: 0;
+        padding: 0 0 38px 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: right;
+        color: $black;
+    }
+
+    &--btn {
+        margin-left: auto;
+        padding: 12px 30px;
+        background-color: $white;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: $orange;
+        border: 1px solid $orange;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.6s;
+
+        &:hover {
+            color: $white;
+            background-color: $orange;
+            transition: 0.6s;
+        }
+    }
+
+    &--img {
+        padding: 39px 0 0;
+        align-self: flex-end;
+    }
+}

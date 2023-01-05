@@ -1,0 +1,63 @@
+.welcome {
+    background-color: $bg-section;
+
+    &--container {
+        gap: 225px;
+    }
+
+    &--leaf {
+        padding: 62px 0;
+
+        & img {
+            width: 448px;
+            height: 407px;
+        }
+    }
+
+    &--title {
+        margin: 0;
+        padding: 0 0 42px 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+        color: $t-sm;
+    }
+
+    &--text {
+        width: 547px;
+        padding: 0 0 48px 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        color: $t-main;
+    }
+
+    &--btn {
+        padding: 10px 26px;
+        background-color: $bg-section;
+        border: 2px solid $orange;
+        border-radius: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $black;
+        cursor: pointer;
+        transition: 0.6s;
+
+        &:hover {
+            color: $white;
+            background-color: $orange;
+            transition: 0.6s;
+        }
+    }
+
+}
