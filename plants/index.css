@@ -406,6 +406,10 @@ html {
   overflow: hidden;
 }
 
+.main {
+  flex: 1 1 auto;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -820,8 +824,50 @@ html {
   color: #717171;
 }
 
+.contacts {
+  height: 537px;
+  background-color: #EDF2EC;
+}
+.contacts--title {
+  margin: 0;
+  padding: 47px 0 36px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  text-align: center;
+}
+.contacts--image {
+  display: inline-block;
+  position: relative;
+  bottom: 145px;
+}
+
+.select--title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+}
+.select--button {
+  width: 450px;
+  margin-left: auto;
+  padding: 5px 33px 5px 23px;
+  background-color: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+}
+.select--pointer {
+  cursor: pointer;
+}
+
 .footer--container {
-  padding: 40px 0;
+  padding: 30px 0 40px;
 }
 
 .copyright {
@@ -842,7 +888,10 @@ html {
   transition: 0.5s;
 }
 
-.school-name {
+.school {
+  margin: 0 0 0 15px;
+}
+.school--name {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -851,13 +900,14 @@ html {
   color: #000000;
   transition: 0.5s;
 }
-.school-name:hover {
+.school--name:hover {
   color: #fdd541;
   transition: 0.5s;
 }
 
 .social--list {
-  gap: 32px;
+  padding: 5px 0 0;
+  gap: 19px;
 }
 .social svg {
   width: 32px;

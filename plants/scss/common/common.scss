@@ -21,6 +21,9 @@ html {
     min-height: 100%;
     overflow: hidden;
 }
+.main {
+    flex: 1 1 auto;
+}
 
 .container {
     max-width: 1220px;
