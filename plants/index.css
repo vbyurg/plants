@@ -684,7 +684,9 @@ html {
   padding: 80px 0 115px;
 }
 .prices--title {
+  align-self: flex-start;
   margin: 0;
+  padding: 0 0 60px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -730,6 +732,92 @@ html {
 .prices--img {
   padding: 39px 0 0;
   align-self: flex-end;
+}
+
+.accordion {
+  width: 332px;
+  height: auto;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+.accordion--item {
+  width: 250px;
+  margin: 0 auto;
+}
+.accordion--item:nth-child(1) {
+  padding: 32px 0 30px;
+}
+.accordion--item:not(:nth-child(1)) {
+  padding: 0 0 30px;
+}
+.accordion--header {
+  padding: 16px 40px;
+  border-radius: 20px;
+  background-color: #EDF2EC;
+}
+.accordion--title {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+.accordion--btn {
+  cursor: pointer;
+}
+
+.acc {
+  display: none;
+  width: 250px;
+  padding: 0 40px;
+  background-color: #D6E7D2;
+  border-radius: 20px;
+}
+.acc--main {
+  padding: 16px 0 12px;
+  border-bottom: 0.5px solid #AEA1A1;
+}
+.acc--btn {
+  cursor: pointer;
+}
+.acc--text {
+  padding: 6px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+}
+.acc .backs {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+.acc--price {
+  padding: 0 0 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.acc--link {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 3px 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  color: #717171;
 }
 
 /*# sourceMappingURL=index.css.map */

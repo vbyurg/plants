@@ -7,20 +7,18 @@
         padding: 80px 0 115px;
     }
 
-
-
     &--title {
+        align-self: flex-start;
         margin: 0;
+        padding: 0 0 60px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
         color: $black;
+
     }
-
-
-
 
     &--content {
         width: 40%;
@@ -64,5 +62,108 @@
     &--img {
         padding: 39px 0 0;
         align-self: flex-end;
+    }
+}
+
+// Accordion
+.accordion {
+    width: 332px;
+    height: auto;
+    border: 1px solid $service;
+    border-radius: 20px;
+
+    // Acc wrapper
+    &--item {
+        width: 250px;
+        margin: 0 auto;
+
+        &:nth-child(1) {
+            padding: 32px 0 30px;
+        }
+
+        &:not(:nth-child(1)) {
+            padding: 0 0 30px;
+        }
+
+    }
+
+    // Acc header
+    &--header {
+        padding: 16px 40px;
+        border-radius: 20px;
+        background-color: $bg-section;
+    }
+
+    &--title {
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: $black;
+    }
+
+    &--btn {
+        cursor: pointer;
+    }
+}
+
+// Acc content
+.acc {
+    display: none;
+    width: 250px;
+    padding: 0 40px;
+    background-color: $bg-acc;
+    border-radius: 20px;
+
+    &--main {
+        padding: 16px 0 12px;
+        border-bottom: 0.5px solid $border-acc;
+    }
+
+    &--btn {
+        cursor: pointer;
+    }
+
+    &--text {
+        padding: 6px 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        color: $t-sm;
+    }
+
+    .backs {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    &--price {
+        padding: 0 0 12px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &--link {
+        display: inline-block;
+        margin: 0 0 15px;
+        padding: 3px 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        background: $white;
+        border-radius: 10px;
+        color: $t-sm;
     }
 }
