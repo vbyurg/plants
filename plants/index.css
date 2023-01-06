@@ -439,9 +439,6 @@ html {
 .header {
   background-color: #EDF2EC;
 }
-.header--container {
-  vertical-align: middle;
-}
 
 .logo--name {
   font-family: "Inika";
@@ -456,7 +453,7 @@ html {
 }
 
 .nav {
-  padding: 42px 0;
+  padding: 43px 0;
 }
 .nav--list {
   flex-wrap: wrap;
@@ -508,7 +505,7 @@ html {
   gap: 225px;
 }
 .welcome--leaf {
-  padding: 62px 0;
+  padding: 60px 0;
 }
 .welcome--leaf img {
   width: 448px;
@@ -516,7 +513,7 @@ html {
 }
 .welcome--title {
   margin: 0;
-  padding: 0 0 42px 0;
+  padding: 0 0 45px 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -526,7 +523,7 @@ html {
 }
 .welcome--text {
   width: 547px;
-  padding: 0 0 48px 0;
+  padding: 0 0 47px 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -568,7 +565,7 @@ html {
 }
 .about--title {
   margin: 0;
-  padding: 156px 0 40px 0;
+  padding: 160px 0 38px 0;
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
@@ -597,7 +594,7 @@ html {
 .service--title {
   margin: 0;
   width: 306px;
-  padding: 32px 0 80px;
+  padding: 35px 0 80px;
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
@@ -605,7 +602,7 @@ html {
   line-height: 52px;
 }
 .service--button {
-  padding: 61px 0 0;
+  padding: 64px 0 0;
   gap: 38px;
   align-self: flex-start;
 }
@@ -685,7 +682,7 @@ html {
 }
 .prices--container {
   align-items: flex-start;
-  padding: 80px 0 115px;
+  padding: 79px 0 115px;
 }
 .prices--title {
   align-self: flex-start;
@@ -703,7 +700,7 @@ html {
 }
 .prices--text {
   margin: 0;
-  padding: 0 0 38px 0;
+  padding: 0 0 41px 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -830,7 +827,7 @@ html {
 }
 .contacts--title {
   margin: 0;
-  padding: 47px 0 36px;
+  padding: 45px 0 36px;
   font-family: "Inika";
   font-style: normal;
   font-weight: 700;
@@ -867,7 +864,7 @@ html {
 }
 
 .footer--container {
-  padding: 30px 0 40px;
+  padding: 27px 0 28px;
 }
 
 .copyright {
