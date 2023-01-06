@@ -820,4 +820,70 @@ html {
   color: #717171;
 }
 
+.footer--container {
+  padding: 40px 0;
+}
+
+.copyright {
+  gap: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+}
+.copyright--link {
+  color: #000000;
+  transition: 0.5s;
+}
+.copyright--link:hover {
+  color: #717171;
+  transition: 0.5s;
+}
+
+.school-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  transition: 0.5s;
+}
+.school-name:hover {
+  color: #fdd541;
+  transition: 0.5s;
+}
+
+.social--list {
+  gap: 32px;
+}
+.social svg {
+  width: 32px;
+  height: 32px;
+  fill: #000000;
+  transition: 0.5s;
+}
+.social svg:hover {
+  scale: 1.4;
+  transition: 0.5s;
+}
+
+.insta:hover {
+  fill: #ff5773;
+}
+
+.fb:hover {
+  fill: #3764b9;
+}
+
+.tw:hover {
+  fill: #03a9f4;
+}
+
+.pinterest:hover {
+  fill: #cb1f24;
+}
+
 /*# sourceMappingURL=index.css.map */
