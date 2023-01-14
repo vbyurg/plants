@@ -415,6 +415,11 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 1208px) {
+  .container {
+    max-width: 668px;
+  }
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -510,6 +515,9 @@ html {
 .welcome--leaf img {
   width: 448px;
   height: 407px;
+}
+.welcome--leaf--content {
+  flex-shrink: 3;
 }
 .welcome--title {
   margin: 0;

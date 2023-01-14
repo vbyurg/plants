@@ -12,6 +12,10 @@
             width: 448px;
             height: 407px;
         }
+
+        &--content {
+            flex-shrink: 3;
+        }
     }
 
     &--title {
@@ -61,3 +65,4 @@
     }
 
 }
+
