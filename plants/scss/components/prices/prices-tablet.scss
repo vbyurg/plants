@@ -1,0 +1,33 @@
+@include tablet {
+    .prices {
+    
+        &--container {
+            padding: 40px 0 80px;
+        }
+    
+        &--title {
+            padding: 0 0 58px 15px;
+            font-size: 35px;
+            line-height: 42px;
+
+        }
+    
+        &--content {
+            width: 43%;
+        }
+    
+        &--text {
+            padding: 100px 0 28px 0;
+            font-size: 25px;
+            line-height: 35px;
+        }
+    
+        &--btn {
+            padding: 12px 33px;
+        }
+    
+        &--img {
+            padding: 29px 0 0;
+        }
+    }
+}

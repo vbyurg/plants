@@ -1,0 +1,22 @@
+@include tablet {
+    .about {
+
+    &--container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    &--title {
+        width: 423px;
+        margin: 0 auto;
+        padding: 55px 0 50px 0;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    &--houseplant {
+        padding: 68px 0 95px;
+    }
+}
+}

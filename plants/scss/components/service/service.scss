@@ -65,6 +65,7 @@
     grid-column-gap: 116px;
 
     &--item img {
+        display: block;
         border-radius: 20px 20px 0px 0px;
     }
 
@@ -93,8 +94,6 @@
 }
 
 .item--wrapper {
-    position: relative;
-    top: -5px;
     border: 1px solid $service;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
