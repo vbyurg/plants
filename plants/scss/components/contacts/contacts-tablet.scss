@@ -1,0 +1,26 @@
+@include tablet {
+    .contacts {
+        height: auto;
+
+        &--title {
+            padding: 39px 0 99px;
+        }
+
+        &--image {
+            width: 200px;
+            margin: 0 auto;
+            padding: 0 0 0 11px;
+            display: block;
+            position: static;
+            bottom: 0;
+        }
+    }
+
+    .select {
+        padding: 0 0 250px;
+        &--button {
+            margin: 0 auto;
+        }
+    }
+
+}

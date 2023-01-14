@@ -973,6 +973,28 @@ html {
   cursor: pointer;
 }
 
+@media (max-width: 1208px) {
+  .contacts {
+    height: auto;
+  }
+  .contacts--title {
+    padding: 39px 0 99px;
+  }
+  .contacts--image {
+    width: 200px;
+    margin: 0 auto;
+    padding: 0 0 0 11px;
+    display: block;
+    position: static;
+    bottom: 0;
+  }
+  .select {
+    padding: 0 0 250px;
+  }
+  .select--button {
+    margin: 0 auto;
+  }
+}
 .footer--container {
   padding: 27px 0 28px;
 }
