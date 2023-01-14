@@ -696,13 +696,14 @@ html {
 .project {
   padding: 0 0 121px 0;
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 24.5%;
+  grid-row-gap: 52px;
   grid-column-gap: 116px;
 }
 .project--item img {
   display: block;
+  margin: 0;
   border-radius: 20px 20px 0px 0px;
 }
 .project--title {
@@ -728,11 +729,20 @@ html {
 }
 
 .item--wrapper {
+  width: auto;
   border: 1px solid #E3E1D5;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
+@media (max-width: 1219px) {
+  .project {
+    grid-column-gap: 100px;
+  }
+  .project--item {
+    width: 330px;
+  }
+}
 @media (max-width: 1208px) {
   .service--head {
     flex-direction: column;
@@ -753,6 +763,9 @@ html {
     grid-row-gap: 35px;
     grid-column-gap: 108px;
   }
+  .project--item {
+    width: auto;
+  }
   .project--title {
     padding: 10px 0 10px;
   }
@@ -768,7 +781,7 @@ html {
 }
 .prices--container {
   align-items: flex-start;
-  padding: 79px 0 115px;
+  padding: 36px 0 115px;
 }
 .prices--title {
   align-self: flex-start;
@@ -932,7 +945,7 @@ html {
   }
 }
 .contacts {
-  height: 537px;
+  height: 535px;
   background-color: #EDF2EC;
 }
 .contacts--title {
@@ -975,18 +988,17 @@ html {
 
 @media (max-width: 1208px) {
   .contacts {
-    height: auto;
+    height: 738px;
   }
   .contacts--title {
     padding: 39px 0 99px;
   }
   .contacts--image {
+    display: block;
+    position: static;
     width: 200px;
     margin: 0 auto;
     padding: 0 0 0 11px;
-    display: block;
-    position: static;
-    bottom: 0;
   }
   .select {
     padding: 0 0 250px;
@@ -996,7 +1008,7 @@ html {
   }
 }
 .footer--container {
-  padding: 27px 0 28px;
+  padding: 40px 0 28px;
 }
 
 .copyright {
@@ -1030,7 +1042,7 @@ html {
   transition: 0.5s;
 }
 .school--name:hover {
-  color: #fdd541;
+  color: #E06733;
   transition: 0.5s;
 }
 
@@ -1063,6 +1075,36 @@ html {
 
 .pinterest:hover {
   fill: #cb1f24;
+}
+
+@media (max-width: 1208px) {
+  .footer--container {
+    flex-direction: column;
+    padding: 33px 0 20px;
+    gap: 18px;
+    justify-content: center;
+  }
+  .copyright {
+    gap: 19px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .school {
+    margin: 0 0 0 15px;
+    position: relative;
+    left: -10px;
+  }
+  .school--name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .school--name:hover {
+    color: #E06733;
+    transition: 0.5s;
+  }
+}
+.social--list {
+  margin: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
