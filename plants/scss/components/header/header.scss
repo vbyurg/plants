@@ -1,5 +1,13 @@
 .header {
     background-color: $bg-section;
+
+    &--container {
+        display: flex;
+    }
+
+    &--logo {
+        margin-right: auto;
+    }
 }
 
 .logo--name {
@@ -65,4 +73,8 @@
             }
         }
     }
+}
+
+.header--burger {
+    display: none;
 }

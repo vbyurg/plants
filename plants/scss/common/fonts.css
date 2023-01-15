@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-Light.otf") format("opentype");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-Regular.otf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-Bold.otf") format("opentype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inika";
+  src: url("./assets/fonts/Inika/Inika-Regular.ttf") format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inika";
+  src: url("./assets/fonts/Inika/Inika-Bold.ttf") format("opentype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}/*# sourceMappingURL=fonts.css.map */
