@@ -819,6 +819,7 @@ html {
   padding: 64px 0 0;
   gap: 38px;
   align-self: flex-start;
+  flex-wrap: wrap;
 }
 .service--btn {
   background-color: #EDF2EC;
@@ -828,7 +829,6 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 26px;
   color: #E06733;
   line-height: 20px;
   display: flex;
@@ -929,6 +929,71 @@ html {
     width: 201px;
     margin: 0 auto;
     padding: 0 0 20px 0;
+  }
+}
+@media (max-width: 668px) {
+  .service--title {
+    width: 70%;
+    padding: 27px 0 38px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .service--button {
+    justify-content: flex-start;
+    padding: 0 0 40px;
+    gap: 11px;
+  }
+  .service--btn {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .service--btn:not(:nth-child(2)) {
+    padding: 6px 30px;
+  }
+  .service--btn:nth-child(2) {
+    padding: 6px 40px;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 0 27px;
+  }
+  .project--item {
+    width: 280px;
+    margin-inline: auto;
+  }
+  .project--item:nth-child(1) {
+    padding-bottom: 32px;
+  }
+  .project--item:nth-child(2) {
+    padding-bottom: 32px;
+  }
+  .project--item:nth-child(2) .project--title {
+    padding: 9px 0 11px;
+  }
+  .project--item:nth-child(3) {
+    padding-bottom: 32px;
+  }
+  .project--item:nth-child(3) .project--title {
+    padding: 9px 0 9px;
+  }
+  .project--item:nth-child(4) {
+    padding-bottom: 32px;
+  }
+  .project--item:nth-child(4) .project--title {
+    padding: 11px 0 11px;
+  }
+  .project--item:nth-child(5) {
+    padding-bottom: 32px;
+  }
+  .project--item:nth-child(5) .project--title {
+    padding: 9px 0 11px;
+  }
+  .project--title {
+    padding: 10px 0 10px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 .prices {

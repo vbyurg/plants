@@ -1,0 +1,87 @@
+@include mobile {
+    .service {
+
+        &--title {
+            width: 70%;
+            padding: 27px 0 38px;
+            font-size: 25px;
+            line-height: 33px;
+        }
+
+        &--button {
+            justify-content: flex-start;
+            padding: 0 0 40px;
+            gap: 11px;
+        }
+
+        &--btn {
+            font-size: 15px;
+            line-height: 20px;
+
+            &:not(:nth-child(2)) {
+                padding: 6px 30px;
+            }
+
+            &:nth-child(2) {
+                padding: 6px 40px;
+            }
+        }
+    }
+
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0 0 27px;
+
+
+        &--item {
+            width: 280px;
+            margin-inline: auto;
+
+            // hack / crutches
+            &:nth-child(1) {
+                padding-bottom: 32px;
+            }
+
+            &:nth-child(2) {
+                padding-bottom: 32px;
+
+                & .project--title {
+                    padding: 9px 0 11px;
+                }
+            }
+
+            &:nth-child(3) {
+                padding-bottom: 32px;
+
+                & .project--title {
+                    padding: 9px 0 9px;
+                }
+            }
+
+            &:nth-child(4) {
+                padding-bottom: 32px;
+
+                & .project--title {
+                    padding: 11px 0 11px;
+                }
+            }
+
+            &:nth-child(5) {
+                padding-bottom: 32px;
+
+                & .project--title {
+                    padding: 9px 0 11px;
+                }
+            }
+        }
+
+        &--title {
+            padding: 10px 0 10px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}
