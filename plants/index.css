@@ -519,6 +519,11 @@ html {
   display: none;
 }
 
+.menu {
+  position: fixed;
+  left: -300px;
+}
+
 @media (max-width: 1208px) {
   .logo--name {
     font-size: 16px;
@@ -541,9 +546,11 @@ html {
   .header--burger {
     display: block;
     position: absolute;
+    z-index: 99999;
     right: 25px;
     width: 40px;
     height: 32px;
+    cursor: pointer;
   }
   .header--burger.active span:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
@@ -585,6 +592,39 @@ html {
   .header--burger span:nth-child(4) {
     top: 24px;
     transform-origin: center;
+  }
+  .menu.show {
+    display: block;
+    position: absolute;
+    transition: left 2s;
+    top: 10px;
+    left: 5%;
+    width: 70%;
+    border: 1px solid black;
+    background: #EDF2EC;
+  }
+  .menu.show .menu--list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+    padding: 25px 0 25px 25px;
+  }
+  .menu.show .menu--link {
+    font-family: "Inika";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #010201;
+    transition: 0.4s;
+  }
+  .menu.show .menu--link:hover {
+    color: transparent;
+    color: #E06733;
+  }
+  .menu.show .menu--link:hover::after {
+    color: #E06733;
+    transform: scale(1);
   }
 }
 .welcome {
@@ -669,6 +709,31 @@ html {
     line-height: 25px;
   }
 }
+@media (max-width: 668px) {
+  .welcome {
+    height: 300px;
+  }
+  .welcome--container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .welcome--leaf {
+    display: none;
+  }
+  .welcome--title {
+    padding: 24px 0 20px 0;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .welcome--text {
+    width: 100%;
+    padding: 0 0 25px;
+  }
+  .welcome--btn {
+    padding: 5px 16px;
+    font-size: 10px;
+  }
+}
 .about {
   background-color: #FFFFFF;
 }
@@ -714,6 +779,23 @@ html {
   }
   .about--houseplant {
     padding: 68px 0 95px;
+  }
+}
+@media (max-width: 668px) {
+  .about--title {
+    width: 100%;
+    margin: 0;
+    padding: 27px 0 13px 0;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .about--text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .about--houseplant {
+    padding: 4px 0 30px;
   }
 }
 .service {
@@ -770,7 +852,7 @@ html {
 .project {
   padding: 0 0 121px 0;
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 52px;
   grid-column-gap: 116px;
