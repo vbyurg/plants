@@ -1165,6 +1165,63 @@ html {
     padding: 29px 0 0;
   }
 }
+@media (max-width: 668px) {
+  .prices--container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 40px;
+  }
+  .prices--title {
+    padding: 23px 0 38px 0;
+    font-size: 25px;
+    line-height: 30px;
+    margin-inline: auto;
+  }
+  .prices--content {
+    width: 70%;
+  }
+  .prices--text {
+    padding: 18px 0 19px 0;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .prices--btn {
+    margin-inline: auto;
+    padding: 8px 23px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .prices--img {
+    display: none;
+  }
+  .accordion {
+    width: 224px;
+  }
+  .accordion--item {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .accordion--item:nth-child(1) {
+    padding: 28px 0 13px;
+  }
+  .accordion--item:not(:nth-child(1)) {
+    padding: 0 0 13px;
+  }
+  .accordion--item:nth-child(3) {
+    padding: 0 0 30px;
+  }
+  .accordion--header {
+    padding: 15px 40px 15px 30px;
+  }
+  .accordion--title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .accordion--btn {
+    cursor: pointer;
+  }
+}
 .contacts {
   height: 535px;
   background-color: #EDF2EC;
