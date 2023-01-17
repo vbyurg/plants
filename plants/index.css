@@ -1221,6 +1221,10 @@ html {
   .accordion--btn {
     cursor: pointer;
   }
+  .acc {
+    display: none;
+    width: 180px;
+  }
 }
 .contacts {
   height: 535px;
@@ -1405,6 +1409,26 @@ html {
   .school--name:hover {
     color: #E06733;
     transition: 0.5s;
+  }
+}
+.social--list {
+  margin: 0;
+}
+
+@media (max-width: 668px) {
+  .footer--container {
+    padding: 22px 0 7px;
+    gap: 0;
+  }
+  .copyright {
+    gap: 22px;
+    padding: 0 0 18px;
+  }
+  .school {
+    margin: 0 0 0 15px;
+    padding: 0 0 5px;
+    position: relative;
+    left: -10px;
   }
 }
 .social--list {
