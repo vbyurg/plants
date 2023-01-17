@@ -1,0 +1,31 @@
+@include mobile {
+    .contacts {
+        height: 442px;
+
+        &--title {
+            padding: 23px 0 80px;
+            font-size: 25px;
+            line-height: 33px;
+            text-align: center;
+        }
+
+        &--image {
+            display: block;
+            position: static;
+            width: 100px;
+            margin: 0 auto;
+            padding: 0;
+            // bottom: 0;
+        }
+    }
+
+    .select {
+        padding: 0 0 132px;
+
+        &--button {
+            width: 300px;
+            margin: 0 auto;
+            padding: 5px 22px 5px 18px;
+        }
+    }
+}

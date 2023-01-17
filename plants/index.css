@@ -1285,6 +1285,32 @@ html {
     margin: 0 auto;
   }
 }
+@media (max-width: 668px) {
+  .contacts {
+    height: 442px;
+  }
+  .contacts--title {
+    padding: 23px 0 80px;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .contacts--image {
+    display: block;
+    position: static;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .select {
+    padding: 0 0 132px;
+  }
+  .select--button {
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px 22px 5px 18px;
+  }
+}
 .footer--container {
   padding: 40px 0 28px;
 }
