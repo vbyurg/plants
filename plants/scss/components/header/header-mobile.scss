@@ -45,10 +45,10 @@
             height: 32px;
             cursor: pointer;
 
-
             // Making a cross animation
             &.active span:nth-child(1) {
                 transform: translateY(12px) rotate(45deg); // the menu items move along the Y axis and rotates by 45 degrees
+                background: $orange;
                 height: 4px;
             }
 
@@ -65,6 +65,7 @@
 
             &.active span:nth-child(4) {
                 transform: translateY(-12px) rotate(-45deg); // the menu items move along the Y axis and rotates by 45 degrees
+                background: $orange;
                 height: 4px;
             }
 

@@ -563,6 +563,7 @@ html {
   }
   .header--burger.active span:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
+    background: #E06733;
     height: 4px;
   }
   .header--burger.active span:nth-child(2) {
@@ -575,6 +576,7 @@ html {
   }
   .header--burger.active span:nth-child(4) {
     transform: translateY(-12px) rotate(-45deg);
+    background: #E06733;
     height: 4px;
   }
   .header--burger span {
