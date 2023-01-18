@@ -1,0 +1,42 @@
+@include tablet {
+    .footer {
+        &--container {
+            flex-direction: column;
+            padding: 33px 0 20px;
+            gap: 18px;
+            justify-content: center;
+
+        }
+    }
+
+    // Git link / copyrigt / year
+    .copyright {
+        gap: 19px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    // School link
+
+    .school {
+        margin: 0 0 0 15px;
+        position: relative;
+        left: -10px;
+
+        &--name {
+            font-size: 20px;
+            line-height: 24px;
+
+            &:hover {
+                color: $orange;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.social {
+    &--list {
+        margin: 0;
+    }
+}

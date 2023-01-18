@@ -1,0 +1,188 @@
+    @include mobile {
+
+        .header {
+
+            &--container {
+                align-items: center;
+            }
+
+            &--logo {
+                padding: 36px 0;
+            }
+        }
+
+        .nav {
+            &--list {
+                gap: 5px;
+            }
+
+            &--link {
+                font-size: 14px;
+                line-height: 10px;
+            }
+        }
+    }
+
+
+
+    // ===========
+    // Burger menu
+    // ===========
+    // Styles for menu wrapper
+
+    @media (max-width: 380px) {
+
+        .nav--list {
+            display: none;
+        }
+
+        .header--burger {
+            display: block;
+            position: absolute;
+            z-index: 99999;
+            right: 25px;
+            width: 40px;
+            height: 32px;
+            cursor: pointer;
+
+
+            // Making a cross animation
+            &.active span:nth-child(1) {
+                transform: translateY(12px) rotate(45deg); // the menu items move along the Y axis and rotates by 45 degrees
+                height: 4px;
+            }
+
+            &.active span:nth-child(2) {
+                transform: translateY(-8px); // the menu items move along the axis Y and disappear
+                opacity: 0;
+
+            }
+
+            &.active span:nth-child(3) {
+                transform: translateY(8px); // the menu items move along the axis Y and disappear
+                opacity: 0;
+            }
+
+            &.active span:nth-child(4) {
+                transform: translateY(-12px) rotate(-45deg); // the menu items move along the Y axis and rotates by 45 degrees
+                height: 4px;
+            }
+
+            // Styles for menu 'lines
+            & span {
+                position: absolute;
+                display: block;
+                width: 100%; // Devided menu into two parts
+                height: 2px;
+                background-color: $t-sm;
+                transition: 0.9s;
+
+                & {
+                    margin-bottom: 6px;
+                }
+
+                // For correct display
+                &:nth-child(1) {
+                    top: 0px;
+                    transform-origin: center;
+                }
+
+                &:nth-child(2) {
+                    top: 8px;
+                }
+
+                &:nth-child(3) {
+                    top: 16px;
+                }
+
+                &:nth-child(4) {
+                    top: 24px;
+                    transform-origin: center;
+                }
+            }
+
+            // ===========
+            // END burger menu
+            // ===========
+        }
+
+        // Hiden menu
+        .menu.show {
+            display: block;
+            position: absolute;
+            transition: left 2s;
+            top: 10px;
+            left: 5%;
+            width: 75%;
+            height: 380px;
+            z-index: 99999;
+            background: $bg-section;
+
+            .menu--list {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                margin: 0;
+                padding: 25px 25px 25px 25px;
+            }
+
+            .menu--link {
+                font-family: 'Inika';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                color: $links-nav;
+                transition: 0.4s;
+
+                &:hover {
+                    color: transparent;
+                    color: $orange;
+
+                    &::after {
+                        color: $orange;
+                        transform: scale(1)
+                    }
+                }
+            }
+        }
+
+        .menu.hide {
+            display: block;
+            position: absolute;
+            transform: rotateX(-200px);
+            transition: left 2s;
+            top: 10px;
+            right: 5%;
+            width: 70%;
+            height: 380px;
+            z-index: 99999;
+            background: $bg-section;
+        }
+
+        .menu--list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 0;
+            padding: 25px 0 25px 25px;
+        }
+
+        .menu--link {
+            font-family: 'Inika';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: $links-nav;
+            transition: 0.4s;
+
+            &:hover {
+                color: transparent;
+                color: $orange;
+
+                &::after {
+                    color: $orange;
+                    transform: scale(1)
+                }
+            }
+        }
+    }

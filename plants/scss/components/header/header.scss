@@ -1,9 +1,13 @@
 .header {
     background-color: $bg-section;
 
-    // &--container {
-    //     vertical-align: middle;
-    // }
+    &--container {
+        display: flex;
+    }
+
+    &--logo {
+        margin-right: auto;
+    }
 }
 
 .logo--name {
@@ -16,6 +20,7 @@
 
     &::before {
         content: url('./assets/svg/logo.svg');
+        vertical-align: middle;
     }
 }
 
@@ -68,4 +73,13 @@
             }
         }
     }
+}
+
+.header--burger {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    left: -300px;
 }
