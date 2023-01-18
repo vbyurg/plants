@@ -5,19 +5,36 @@
             align-items: center;
         }
 
-        &--nav {
-            display: none;
-        }
-
         &--logo {
             padding: 36px 0;
         }
     }
 
-    // ===========
-    // Burger menu
-    // ===========
-    // Styles for menu wrapper
+    .nav {
+        &--list {
+            gap: 5px;
+        }
+    
+        &--link {
+            font-size: 14px;
+            line-height: 10px;
+        }
+    }
+}
+
+
+
+// ===========
+// Burger menu
+// ===========
+// Styles for menu wrapper
+
+@media (max-width: 380px) {
+
+    .nav--list {
+        display: none;
+    }
+
     .header--burger {
         display: block;
         position: absolute;
