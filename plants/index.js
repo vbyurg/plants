@@ -3,8 +3,9 @@ console.log(`1 пункт: 24 балла\n2 пункт: 24 балла\n3 пун�
 
 // Burger menu
 
-const headerBurger = document.querySelector('.header--burger')
+const headerBurger = document.querySelector('.header--burger');
 const menu = document.querySelector('.menu');
+const main = document.querySelector('.main');
 
 // Selectors are added/removed depending on whether the menu button is pressed or not
 headerBurger.addEventListener('click', show);
@@ -13,9 +14,17 @@ function show() {
     if (headerBurger.classList.contains('active')) {
         headerBurger.classList.remove('active');
         menu.classList.remove('show');
+        menu.classList.add('hide');
+        main.style.filter = 'blur(0)';
+
     } else {
         headerBurger.classList.add('active');
         menu.classList.add('show');
+        menu.classList.remove('hide');
+        function blur() {
+            main.style.filter = 'blur(1px)';
+        }
+        blur();
     }
 }
 
@@ -31,6 +40,8 @@ window.addEventListener('click', function ({
         if (headerBurger.classList.contains('active')) {
             headerBurger.classList.remove('active');
             menu.classList.remove('show');
+            menu.classList.add('hide');
+            main.style.filter = 'blur(0)';
         }
     }
 
@@ -39,6 +50,10 @@ window.addEventListener('click', function ({
         if (headerBurger.classList.contains('active')) {
             headerBurger.classList.remove('active');
             menu.classList.remove('show');
+            menu.classList.add('hide');
+            main.style.filter = 'blur(0)';
         }
     }
 })
+
+

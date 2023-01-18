@@ -608,8 +608,9 @@ html {
     transition: left 2s;
     top: 10px;
     left: 5%;
-    width: 70%;
-    border: 1px solid black;
+    width: 75%;
+    height: 380px;
+    z-index: 99999;
     background: #EDF2EC;
   }
   .menu.show .menu--list {
@@ -617,7 +618,7 @@ html {
     flex-direction: column;
     gap: 25px;
     margin: 0;
-    padding: 25px 0 25px 25px;
+    padding: 25px 25px 25px 25px;
   }
   .menu.show .menu--link {
     font-family: "Inika";
@@ -632,6 +633,41 @@ html {
     color: #E06733;
   }
   .menu.show .menu--link:hover::after {
+    color: #E06733;
+    transform: scale(1);
+  }
+  .menu.hide {
+    display: block;
+    position: absolute;
+    transform: rotateX(-200px);
+    transition: left 2s;
+    top: 10px;
+    right: 5%;
+    width: 70%;
+    height: 380px;
+    z-index: 99999;
+    background: #EDF2EC;
+  }
+  .menu--list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+    padding: 25px 0 25px 25px;
+  }
+  .menu--link {
+    font-family: "Inika";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #010201;
+    transition: 0.4s;
+  }
+  .menu--link:hover {
+    color: transparent;
+    color: #E06733;
+  }
+  .menu--link:hover::after {
     color: #E06733;
     transform: scale(1);
   }
