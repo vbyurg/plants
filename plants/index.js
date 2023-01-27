@@ -93,7 +93,11 @@ function handleChoice() {
         card3.classList.remove('block')
         card4.classList.remove('block')
     }
+    if (!choiceButton.classList.contains('rotate')) {
+        title.innerHTML = 'City'
+    }
 }
+
 choiceButton.addEventListener('click', handleChoice)
 
 // city

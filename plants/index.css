@@ -1479,6 +1479,19 @@ html {
     margin: 0 auto;
     padding: 0 0 0 11px;
   }
+  .contacts--choice {
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #DCE9D9;
+    transition: all 1.5s;
+  }
+  .card {
+    right: 0;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   .select {
     padding: 0 0 250px;
   }
@@ -1503,6 +1516,15 @@ html {
     margin: 0 auto;
     padding: 0;
   }
+  .contacts--choice {
+    width: 300px;
+    top: 183px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .contacts .contacts--choice_wrapper {
+    width: 260px;
+  }
   .select {
     padding: 0 0 132px;
   }
@@ -1510,6 +1532,37 @@ html {
     width: 300px;
     margin: 0 auto;
     padding: 5px 22px 5px 18px;
+  }
+  .card {
+    top: 220px;
+    width: 300px;
+    height: 210px;
+  }
+  .card--wrapper {
+    margin: 0;
+    width: 100%;
+    padding: 15px 15px;
+  }
+  .card--adress {
+    padding-bottom: 20px;
+  }
+  .card--link {
+    margin-left: 70px;
+  }
+  .card--info {
+    line-height: 20px;
+    width: 144px;
+  }
+  .city {
+    margin-right: 40px;
+  }
+  .phone {
+    margin-right: 20px;
+  }
+  .adress {
+    margin-right: 12px;
+    width: 65px;
+    line-height: 20px;
   }
 }
 .footer--container {
