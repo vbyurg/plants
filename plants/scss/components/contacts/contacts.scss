@@ -2,6 +2,10 @@
     height: 535px;
     background-color: $bg-section;
 
+    &--container {
+        position: relative;
+    }
+
     &--title {
         margin: 0;
         padding: 45px 0 36px;
@@ -19,10 +23,160 @@
         position: relative;
         bottom: 145px;
     }
+
+    // =================
+    // Choice
+    &--choice {
+        display: none;
+        position: absolute;
+        width: 450px;
+        height: 232px;
+        top: 183px;
+        right: 0;
+        background: $contacts-city;
+        transition: all 1.5s;
+    }
+
+    .contacts--choice_wrapper {
+        margin: 0 auto;
+        width: 380px;
+    }
+
+    &--city {
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        color: $green;
+        border-bottom: 1px solid $contacts-border;
+        cursor: pointer;
+
+        &:hover {
+            color: $t-sm;
+            border-bottom: 1px solid $t-sm;
+            transition: all 0.3s ease;
+        }
+
+        &:not(:hover) {
+            transition: all 0.3s ease;
+        }
+
+        &:nth-child(1) {
+            padding: 26px 0 0px;
+        }
+
+        &:not(:nth-child(1)) {
+            padding-top: 5px;
+        }
+    }
+
+    // =================
 }
 
-.select {
+// =================
+// Info cards
 
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: none;
+}
+
+.card {
+    position: absolute;
+    right: 0;
+    top: 230px;
+    width: 450px;
+    height: 214px;
+    background: $bg-section;
+    border: 1px solid $black;
+    border-radius: 20px;
+
+    &--wrapper {
+        width: 339px;
+        padding: 17px 0 32px 33px;
+
+    }
+
+    &--name,
+    &--phone,
+    &--adress {
+        display: flex;
+        align-items: center;
+    }
+
+    &--title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        color: $black;
+    }
+
+    &--info {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        color: $t-sm;
+    }
+
+    &--link {
+        display: inline-block;
+        padding: 6px 45px;
+        margin-left: 129px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 13px;
+        text-align: center;
+        color: $t-sm;
+        border: 1px solid $orange;
+        border-radius: 5px;
+
+        &:hover {
+            background: $orange;
+            color: $white;
+            transition: all 1s ease;
+        }
+
+        &:not(:hover) {
+            transition: all 1s ease;
+        }
+    }
+
+    &--adress {
+        padding-bottom: 20px;
+    }
+}
+
+.city {
+    margin-right: 93px;
+}
+
+.phone {
+    margin-right: 70px;
+}
+
+.adress {
+    margin-right: 10px;
+}
+
+// =================
+// =================
+// =================
+
+.select {
     &--title {
         font-family: 'Inter';
         font-style: normal;
@@ -34,15 +188,46 @@
     }
 
     &--button {
+        display: flex;
+        justify-content: space-between;
         width: 450px;
         margin-left: auto;
         padding: 5px 33px 5px 23px;
         background-color: $bg-acc;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 0px;
+        transition: all 1s;
+
+        &:hover {
+            background-color: $contacts;
+            transition: all 1s ease;
+            box-shadow: none;
+        }
+
+        &:not(:hover) {
+            transition: all 1s ease;
+        }
     }
 
     &--pointer {
         cursor: pointer;
+        transition: all 1s;
     }
+}
+
+// fot button (img arrow)
+.rotate {
+    transform: rotate(-180deg);
+    transition: all 1s;
+
+}
+
+.block {
+    display: block;
+
+}
+
+.shadow {
+    box-shadow: none;
+    background-color: $contacts;
 }
