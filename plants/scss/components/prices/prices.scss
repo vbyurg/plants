@@ -52,6 +52,7 @@
         cursor: pointer;
         transition: 0.6s;
 
+
         &:hover {
             color: $white;
             background-color: $orange;
@@ -105,13 +106,20 @@
     }
 
     &--btn {
+        
+        z-index: 35;
         cursor: pointer;
+        transition: all 1s;
     }
 }
 
 // Acc content
+
+
 .acc {
     display: none;
+    position: relative;
+    top: -52px;
     width: 250px;
     padding: 0 40px;
     background-color: $bg-acc;
@@ -166,4 +174,12 @@
         border-radius: 10px;
         color: $t-sm;
     }
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.block {
+    display: block;
 }

@@ -938,6 +938,15 @@ html {
   border-bottom-right-radius: 20px;
 }
 
+.active_services {
+  background-color: #E06733;
+  color: #FFFFFF;
+}
+
+.blur_services {
+  filter: blur(2px);
+}
+
 @media (max-width: 1219px) {
   .project {
     grid-column-gap: 100px;
@@ -1133,11 +1142,15 @@ html {
   color: #000000;
 }
 .accordion--btn {
+  z-index: 35;
   cursor: pointer;
+  transition: all 1s;
 }
 
 .acc {
   display: none;
+  position: relative;
+  top: -52px;
   width: 250px;
   padding: 0 40px;
   background-color: #D6E7D2;
@@ -1186,6 +1199,14 @@ html {
   background: #FFFFFF;
   border-radius: 10px;
   color: #717171;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.block {
+  display: block;
 }
 
 @media (max-width: 1208px) {
@@ -1271,6 +1292,7 @@ html {
   .acc {
     display: none;
     width: 180px;
+    padding: 0 20px;
   }
 }
 .contacts {
@@ -1278,7 +1300,9 @@ html {
   background-color: #EDF2EC;
 }
 .contacts--container {
+  height: 535px;
   position: relative;
+  overflow: hidden;
 }
 .contacts--title {
   margin: 0;
@@ -1467,6 +1491,9 @@ html {
 
 @media (max-width: 1208px) {
   .contacts {
+    height: 738px;
+  }
+  .contacts--container {
     height: 738px;
   }
   .contacts--title {

@@ -100,3 +100,14 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+
+.active_services {
+    background-color: $orange;
+    color: $white;
+}
+
+.blur_services {
+    filter: blur(2px);
+}
+

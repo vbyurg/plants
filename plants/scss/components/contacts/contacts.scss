@@ -1,9 +1,11 @@
 .contacts {
     height: 535px;
     background-color: $bg-section;
-
+    
     &--container {
+        height: 535px;
         position: relative;
+        overflow: hidden;
     }
 
     &--title {

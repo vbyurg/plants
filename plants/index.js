@@ -78,6 +78,7 @@ window.addEventListener('click', function ({
 
 
 // CONTACTS CHOICE
+// ===========================
 const choiceButton = document.querySelector('.select--pointer');
 const choiceBlock = document.querySelector('.contacts--choice');
 const shadow = document.querySelector('.select--button');
@@ -110,7 +111,7 @@ const card2 = document.querySelector('.card2')
 const card3 = document.querySelector('.card3')
 const card4 = document.querySelector('.card4')
 
-function city1 () {
+function city1() {
     if (canandaigua.classList.contains('canandaigua')) {
         card1.classList.toggle('block')
         choiceButton.classList.toggle('rotate')
@@ -119,7 +120,8 @@ function city1 () {
         title.innerHTML = canandaigua.textContent;
     }
 }
-function city2 () {
+
+function city2() {
     if (newYork.classList.contains('newYork')) {
         card2.classList.toggle('block')
         choiceButton.classList.toggle('rotate')
@@ -128,7 +130,8 @@ function city2 () {
         title.innerHTML = newYork.textContent;
     }
 }
-function city3 () {
+
+function city3() {
     if (yonkers.classList.contains('yonkers')) {
         card3.classList.toggle('block')
         choiceButton.classList.toggle('rotate')
@@ -137,7 +140,8 @@ function city3 () {
         title.innerHTML = yonkers.textContent;
     }
 }
-function city4 () {
+
+function city4() {
     if (sherril.classList.contains('sherril')) {
         card4.classList.toggle('block')
         choiceButton.classList.toggle('rotate')
@@ -154,3 +158,88 @@ sherril.addEventListener('click', city4)
 
 // =====================
 // =====================
+// =====================
+
+// PRICES
+const accButton1 = document.querySelector('.btn1')
+const accButton2 = document.querySelector('.btn2')
+const accButton3 = document.querySelector('.btn3')
+
+const acc1 = document.querySelector('.acc1')
+const acc2 = document.querySelector('.acc2')
+const acc3 = document.querySelector('.acc3')
+
+
+function price1() {
+    if (!accButton1.classList.contains('rotate')) {
+        accButton1.classList.add('rotate');
+        acc1.classList.add('block');
+        accButton2.classList.remove('rotate');
+        acc2.classList.remove('block');
+        accButton3.classList.remove('rotate');
+        acc3.classList.remove('block');
+    } else {
+        accButton1.classList.remove('rotate');
+        acc1.classList.remove('block');
+    }
+}
+
+function price2() {
+    if (!accButton2.classList.contains('rotate')) {
+        accButton2.classList.add('rotate');
+        acc2.classList.add('block');
+        accButton1.classList.remove('rotate');
+        acc1.classList.remove('block');
+        accButton3.classList.remove('rotate');
+        acc3.classList.remove('block');
+    } else {
+        accButton2.classList.remove('rotate');
+        acc2.classList.remove('block');
+    }
+}
+
+function price3() {
+    if (!accButton3.classList.contains('rotate')) {
+        accButton3.classList.add('rotate');
+        acc3.classList.add('block');
+        accButton2.classList.remove('rotate');
+        acc2.classList.remove('block');
+        accButton1.classList.remove('rotate');
+        acc1.classList.remove('block');
+    } else {
+        accButton3.classList.remove('rotate');
+        acc3.classList.remove('block');
+    }
+}
+
+accButton1.addEventListener('click', price1);
+accButton2.addEventListener('click', price2);
+accButton3.addEventListener('click', price3);
+
+// =====================
+// Services
+// =====================
+
+const serviceButtons = document.querySelectorAll('.service--btn');
+const serviceImages = document.querySelectorAll('.project--item img');
+let activeBtn = [];
+
+serviceButtons.forEach(element => {
+    element.addEventListener('click', function () {
+        const active = this.classList.contains('active_services');
+        if (!active && activeBtn.length >= 2) return;
+
+        if (active) {
+            this.classList.remove('active_services');
+            activeBtn = activeBtn.filter(btn => btn !== this)
+        } else {
+            this.classList.add('active_services');
+            activeBtn.push(this)
+        }
+
+
+    })
+})
+
+const img = document.getElementsByTagName('img');
+console.log(img)
