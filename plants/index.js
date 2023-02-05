@@ -1,5 +1,10 @@
-console.log(`1 пункт: 50 баллов\n2 пункт: 50 баллов\n3 пункт: 25 балла`)
-
+console.log(`1 пункт: 30 баллов`)
+console.log(`1.1: 20 баллов`)
+console.log(`1.2: 10 баллов (выполнено частично)`)
+console.log(`1.3: 10 баллов`)
+console.log(`2 пункт: 50 баллов`)
+console.log(`3 пункт: 25 баллов`)
+console.log(`Итого: 115 баллов`)
 
 // Burger menu
 const headerBurger = document.querySelector('.header--burger');
@@ -75,10 +80,11 @@ window.addEventListener('click', function ({
     }
 })
 
-
-
+// =====================
+// =====================
+// =====================
 // CONTACTS CHOICE
-// ===========================
+// ======================
 const choiceButton = document.querySelector('.select--pointer');
 const choiceBlock = document.querySelector('.contacts--choice');
 const shadow = document.querySelector('.select--button');
@@ -216,30 +222,133 @@ accButton1.addEventListener('click', price1);
 accButton2.addEventListener('click', price2);
 accButton3.addEventListener('click', price3);
 
+
+
+// =====================
+// =====================
 // =====================
 // Services
 // =====================
+// v.3.0
+const buttons = document.querySelectorAll('.service--btn');
+const blocks = document.querySelectorAll('.project--item');
+let activeButtons = [];
 
-const serviceButtons = document.querySelectorAll('.service--btn');
-const serviceImages = document.querySelectorAll('.project--item img');
-let activeBtn = [];
-
-serviceButtons.forEach(element => {
-    element.addEventListener('click', function () {
-        const active = this.classList.contains('active_services');
-        if (!active && activeBtn.length >= 2) return;
+buttons.forEach(button => {
+    button.addEventListener('click', event => {
+        const button = event.target;
+        const service = button.dataset.service;
+        const active = button.classList.contains('active_services');
 
         if (active) {
-            this.classList.remove('active_services');
-            activeBtn = activeBtn.filter(btn => btn !== this)
+            button.classList.remove('active_services');
+            activeButtons = activeButtons.filter(item => item !== service);
         } else {
-            this.classList.add('active_services');
-            activeBtn.push(this)
+            if (activeButtons.length === 2) return;
+            button.classList.add('active_services');
+            activeButtons.push(service);
         }
 
+        blocks.forEach(item => {
+            if (activeButtons.includes(item.dataset.service)) {
+                item.classList.remove('blur_services');
+            } else if (!activeButtons.includes(item.dataset.service)) {
+                item.classList.add('blur_services');
+            }
+        });
+    });
+});
 
-    })
-})
+// Version 2.0
+// // Buttons
+// const gardenBtn = document.querySelector('#garden')
+// const lawnBtn = document.querySelector('#lawn')
+// const plantingBtn = document.querySelector('#planting')
+// // Blocks
+// const gardenBlock = document.querySelectorAll('.garden')
+// const lawnBlock = document.querySelectorAll('.lawn')
+// const plantingBlock = document.querySelectorAll('.planting')
 
-const img = document.getElementsByTagName('img');
-console.log(img)
+// function garden() {
+//     const active = gardenBtn.classList.contains('active_services');
+
+//     if (active) {
+//         gardenBtn.classList.remove('active_services');
+//         lawnBlock.forEach(a => a.classList.remove('blur_services'))
+//         plantingBlock.forEach(a => a.classList.remove('blur_services'))
+//         gardenBlock.forEach(a => a.classList.remove('blur_services'))
+
+//     } else {
+//         gardenBtn.classList.add('active_services');
+//         lawnBlock.forEach(a => a.classList.add('blur_services'))
+//         plantingBlock.forEach(a => a.classList.add('blur_services'))
+//         gardenBlock.forEach(a => a.classList.remove('blur_services'))
+//     }
+// }
+
+// function lawn() {
+//     const active = lawnBtn.classList.contains('active_services');
+
+//     if (active) {
+//         lawnBtn.classList.remove('active_services');
+//         gardenBlock.forEach(a => a.classList.remove('blur_services'))
+//         plantingBlock.forEach(a => a.classList.remove('blur_services'))
+//         lawnBlock.forEach(a => a.classList.remove('blur_services'))
+
+//     } else {
+//         lawnBtn.classList.add('active_services');
+//         gardenBlock.forEach(a => a.classList.add('blur_services'))
+//         plantingBlock.forEach(a => a.classList.add('blur_services'))
+//         lawnBlock.forEach(a => a.classList.remove('blur_services'))
+//     }
+// }
+
+// function planting() {
+//     const active = plantingBtn.classList.contains('active_services');
+
+//     if (active) {
+//         plantingBtn.classList.remove('active_services');
+//         gardenBlock.forEach(a => a.classList.remove('blur_services'))
+//         lawnBlock.forEach(a => a.classList.remove('blur_services'))
+//         plantingBlock.forEach(a => a.classList.remove('blur_services'))
+//     } else {
+//         plantingBtn.classList.add('active_services');
+//         gardenBlock.forEach(a => a.classList.add('blur_services'))
+//         lawnBlock.forEach(a => a.classList.add('blur_services'))
+//         plantingBlock.forEach(a => a.classList.remove('blur_services'))
+
+//     }
+// }
+
+// gardenBtn.addEventListener('click', garden)
+// lawnBtn.addEventListener('click', lawn)
+// plantingBtn.addEventListener('click', planting)
+
+
+// Version 1.0
+// const serviceButtons = document.querySelectorAll('.service--btn');
+// const serviceImages = document.querySelectorAll('.project--item');
+
+// let activeBtn = [];
+
+// serviceButtons.forEach(element => {
+//     element.addEventListener('click', function () {
+//         const active = this.classList.contains('active_services');
+
+
+//         if (!active && activeBtn.length == 2) return;
+
+//         if (active) {
+//             this.classList.remove('active_services');
+//             activeBtn = activeBtn.filter(btn => btn !== this)
+
+
+//         } else {
+//             this.classList.add('active_services');
+//             activeBtn.push(this)
+//         }
+//     })
+// })
+// =====================
+// =====================
+// ====================

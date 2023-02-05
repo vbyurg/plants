@@ -882,7 +882,7 @@ html {
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: 0.6s;
+  transition: all 0.5s ease-in-out;
 }
 .service--btn:not(:nth-child(2)) {
   padding: 14px 41px;
@@ -903,6 +903,9 @@ html {
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 52px;
   grid-column-gap: 116px;
+}
+.project--item {
+  transition: all 0.7s ease-in-out;
 }
 .project--item img {
   display: block;
@@ -941,10 +944,12 @@ html {
 .active_services {
   background-color: #E06733;
   color: #FFFFFF;
+  transition: all 0.5s ease-in-out;
 }
 
 .blur_services {
   filter: blur(2px);
+  transition: all 0.7s ease-in-out;
 }
 
 @media (max-width: 1219px) {
@@ -1158,7 +1163,6 @@ html {
 }
 .acc--main {
   padding: 16px 0 12px;
-  border-bottom: 0.5px solid #AEA1A1;
 }
 .acc--btn {
   cursor: pointer;

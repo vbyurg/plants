@@ -38,7 +38,7 @@
         align-items: center;
         text-align: center;
         cursor: pointer;
-        transition: 0.6s;
+        transition: all 0.5s ease-in-out;
 
         &:not(:nth-child(2)) {
             padding: 14px 41px;
@@ -63,6 +63,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 52px;
     grid-column-gap: 116px;
+
+    &--item {
+        transition: all 0.7s ease-in-out;
+    }
 
     &--item img {
         display: block;
@@ -105,9 +109,10 @@
 .active_services {
     background-color: $orange;
     color: $white;
+    transition: all 0.5s ease-in-out;
 }
 
 .blur_services {
     filter: blur(2px);
+    transition: all 0.7s ease-in-out;
 }
-
