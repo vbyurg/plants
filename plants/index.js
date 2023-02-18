@@ -230,6 +230,7 @@ accButton3.addEventListener('click', price3);
 // Services
 // =====================
 // v.3.0
+
 const buttons = document.querySelectorAll('.service--btn');
 const blocks = document.querySelectorAll('.project--item');
 let activeButtons = [];
