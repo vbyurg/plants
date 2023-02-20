@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,10 +7,10 @@
   <link href="assets/favicon.ico" rel="shortcut icon" />
   <link rel="stylesheet" href="css/owfont-regular.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <title>momentum</title>
+  <title>Momentum</title>
 </head>
 
-<body>
+<body class="body">
   <!-- Header -->
   <header class="header">
     <!-- Player -->
@@ -41,7 +41,7 @@
   <main class="main">
     <!-- Slider -->
     <div class="slider-icons">
-      <button class="slide-prev slider-icon"></button>
+      <button class="slide-prev slider-icon""></button>
       <button class="slide-next slider-icon"></button>
     </div>
     <!-- Time -->
@@ -52,20 +52,38 @@
     <!-- Greeting -->
     <div class="greeting-container">
       <span class="greeting"></span>
-      <input class="name" type="text" placeholder="[Введите имя]"/>
+      <input class="name" type="text" placeholder="[Введите имя]" />
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <button class="change-quote"></button>
-    <div>
-      <div class="quote"></div>
-      <div class="author"></div>
+    <div class="quotes"> <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
     </div>
-  </footer>
-  <script src="script.js"></script>
 
+    <div class="info">
+      <div class="year">
+        <p>©</p>
+        <p>2022</p>
+      </div>
+      <div class="github">
+        <a class="copyright--link" href="https://github.com/vbyurg" target="_blank">vbyurg</a>
+      </div>
+      <div class="logo">
+        <a href="https://rs.school/js/" class="logo-link"><img src="./assets/svg/logo.svg" alt="logo"></a>
+      </div>
+    </div>
+
+  </footer>
+  <script src="./script/score.js"></script>
+  <script src="./script/time.js"></script>
+  <script src="./script/greeting.js"></script>
+  <script src="./script/quotes.js"></script>
+  <script src="./script/slider.js"></script>
 </body>
 
 </html>
